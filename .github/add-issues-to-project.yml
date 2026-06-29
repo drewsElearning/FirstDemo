@@ -1,0 +1,25 @@
+name: Auto Add Issues to Project
+
+on:
+  issues:
+    types:
+      - opened
+      - reopened
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add Issue to Project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          # Your project (converted from your view link)
+          project-url: https://github.com/users/drewsElearning/projects/10
+
+          # PAT stored in repo secrets
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+
+          # Optional: only add specific issue types
+          labeled: bug, enhancement
+          label-operator: OR
