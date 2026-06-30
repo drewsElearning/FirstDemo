@@ -216,3 +216,96 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ----------------------------------
+# Windows OS files
+# ----------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Windows system / hidden folders
+System Volume Information/
+
+# ----------------------------------
+# User-specific Windows config
+# ----------------------------------
+*.user
+*.userosscache
+*.suo
+*.rsuser
+
+# PowerShell / credentials artifacts
+*.ps1.history
+ConsoleHost_history.txt
+
+# ----------------------------------
+# AppData & local environment leaks
+# (avoid committing machine-specific state)
+# ----------------------------------
+AppData/
+appdata/
+LocalAppData/
+
+# ----------------------------------
+# VS Code local workspace settings
+# (keep shared settings if needed)
+# ----------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# ----------------------------------
+# Environment & secrets (critical)
+# ----------------------------------
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+
+# ----------------------------------
+# Python sensitive/runtime artifacts
+# ----------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Local databases / dev data
+*.db
+*.sqlite3
+
+# ----------------------------------
+# Logs / temp files
+# ----------------------------------
+*.log
+logs/
+tmp/
+temp/
+
+# ----------------------------------
+# Windows package/tooling leftovers
+# ----------------------------------
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# ----------------------------------
+# Debug / crash dumps
+# ----------------------------------
+*.stackdump
+*.dmp
